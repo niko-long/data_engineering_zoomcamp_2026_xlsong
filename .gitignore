@@ -1,0 +1,31 @@
+# Data files
+*.parquet
+*.csv
+*.gz
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# uv
+.python-version
+uv.lock
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+ny_taxi_postgres_data/
+pgadmin_data/
