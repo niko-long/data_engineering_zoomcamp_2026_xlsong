@@ -1,6 +1,6 @@
 # Data files
 *.parquet
-*.csv
+!seeds/*.csv
 *.gz
 
 # Python-generated files
