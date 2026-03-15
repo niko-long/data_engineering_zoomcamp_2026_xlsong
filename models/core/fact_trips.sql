@@ -52,7 +52,7 @@ from {{ ref('int_trips') }} as trips
 -- LEFT JOIN preserves all trips even if zone information is missing or unknown
 left join {{ ref('dim_zones') }} as pz
     on trips.pickup_location_id = pz.location_id
-inner join {{ ref('dim_zones') }} as dz
+left join {{ ref('dim_zones') }} as dz
     on trips.dropoff_location_id = dz.location_id
 
 {% if is_incremental() %}
